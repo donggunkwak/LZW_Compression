@@ -44,9 +44,9 @@ public class Decoder {
 
 		int nextVal = 256;
 		int old = binVals.get(0);
-		out.print(dict.get(old));
-		String s = "";
-		String c = "";
+		String s = dict.get(old);
+		String c = ""+s.charAt(0);
+		out.print(s);
 		for(int i = 1;i<binVals.size();i++)
 		{
 			int next = binVals.get(i);
